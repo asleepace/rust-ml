@@ -145,4 +145,4 @@ If you need any of these, they're each a small isolated addition rather than a r
 
 ## License
 
-Whatever you want. Personal learning project.
+MIT

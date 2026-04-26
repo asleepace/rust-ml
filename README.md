@@ -15,8 +15,13 @@ Hand-rolled matrix ops, hand-rolled backprop, hand-rolled CSV parser. If you wan
 ## Build
 
 ```bash
+# build and run
 cargo build --release
 ./target/release/nn-train help
+
+# build and install
+cargo install --path .
+nn-train help
 ```
 
 ## Quick sanity check (XOR)
@@ -43,7 +48,7 @@ x1,x2,label
 
 ```bash
 cargo run --release -- fit \
-    --data train.csv \
+    --data demo/demo_train.csv \
     --arch 2,8,2 \
     --activations relu \
     --task multiclass \

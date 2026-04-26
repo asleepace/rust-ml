@@ -146,14 +146,14 @@ If you need any of these, they're each a small isolated addition rather than a r
 ## How to use?
 
 ```
-  [Postgres]                                    [predictions]
-      |                                              ^
-      | export                                       |
-      v                                              |
-  train.csv  ─►  nn-train fit  ─►  weights.txt  ─►  nn-train predict  ─►  preds.csv
-                                                    ^
-                                                    |
-                                                today.csv (1 row, today's snapshot)
+[Postgres]                                    [predictions]
+    |                                              ^
+    | export                                       |
+    v                                              |
+train.csv  ─►  nn-train fit  ─►  weights.txt  ─►  nn-train predict  ─►  preds.csv
+                                                  ^
+                                                  |
+                                              today.csv (1 row, today's snapshot)
 ```
 
 ### Step 1: Export labeled training data

@@ -1,6 +1,12 @@
 [package]
-name = "rust-ml"
+name = "nn-train"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
-[dependencies]
+[[bin]]
+name = "nn-train"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
